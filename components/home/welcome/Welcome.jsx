@@ -7,10 +7,12 @@ import {icons, SIZES} from "../../../constants"
 
 const Welcome = () => {
   const router = useRouter()
-  
+
   return (
     <View>
-      <Text>Welcome</Text>
+      <View style={styles.container}>
+        <Text style={styles.userName}>Hello Jethro</Text>
+      </View>
     </View>
   )
 }
