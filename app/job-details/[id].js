@@ -21,6 +21,10 @@ import { COLOR, icons, SIZES } from "../../constants";
 import useFetch from "../../hook/useFetch";
 
 const JobDetails = () => {
+const params = useGlobalSearchParams()
+const router = useRouter()
+
+
   return <Text>Job Details</Text>;
 };
 
