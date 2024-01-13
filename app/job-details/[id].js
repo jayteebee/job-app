@@ -23,6 +23,9 @@ import useFetch from "../../hook/useFetch";
 const JobDetails = () => {
 const params = useGlobalSearchParams()
 const router = useRouter()
+const [refreshing, setRefreshing] = useState(false)
+
+const onRefresh = () => {}
 
 const {data, isLoading, error, refetch} = useFetch("job-details", {
     job_id: params.id
