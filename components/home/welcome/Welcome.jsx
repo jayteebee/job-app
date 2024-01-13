@@ -30,6 +30,10 @@ const Welcome = () => {
           />
         </TouchableOpacity>
       </View>
+
+      <View style={styles.tabsContainer}>
+        <FlatList  />
+      </View>
     </View>
   )
 }
