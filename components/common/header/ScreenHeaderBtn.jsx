@@ -5,13 +5,11 @@ import styles from './screenheader.style'
 
 const ScreenHeaderBtn = ({iconUrl, dimension, handlePress}) => {
   return (
-    <View>
     <TouchableOpacity>
       <Image
       source={iconUrl}
       />
     </TouchableOpacity>
-    </View>
   )
 }
 
