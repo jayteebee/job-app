@@ -54,7 +54,7 @@ const [activeJobType, setActiveJobType] = useState("Full-time")
               router.push(`/search/${item}`)
             }}
             >
-              <Text>{item}</Text>
+              <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
         />
