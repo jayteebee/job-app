@@ -16,6 +16,7 @@ const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
 const Welcome = () => {
   const router = useRouter();
+const [activeJobType, setActiveJobType] = useState("Full-time")
 
   return (
     <View>
@@ -46,7 +47,9 @@ const Welcome = () => {
         <FlatList
           data={jobTypes}
           renderItem={({ item }) => (
-            <TouchableOpacity>
+            <TouchableOpacity 
+            style={styles.tab(activeJobType, item)}
+            >
               <Text>{item}</Text>
             </TouchableOpacity>
           )}
