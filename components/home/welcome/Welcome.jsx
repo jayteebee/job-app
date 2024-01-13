@@ -49,6 +49,10 @@ const [activeJobType, setActiveJobType] = useState("Full-time")
           renderItem={({ item }) => (
             <TouchableOpacity 
             style={styles.tab(activeJobType, item)}
+            onPress={() => {
+              setActiveJobType(item)
+              router.push(`/search/${item}`)
+            }}
             >
               <Text>{item}</Text>
             </TouchableOpacity>
