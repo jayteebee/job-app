@@ -13,7 +13,7 @@ const COLORS = {
 const FONT = {
   regular: "DMRegular",
   medium: "DMMedium",
-  bold: "DMRegular",
+  bold: "DMBold",
 };
 
 const SIZES = {
