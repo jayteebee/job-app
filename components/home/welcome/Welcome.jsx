@@ -5,6 +5,8 @@ import { useRouter } from 'expo-router'
 import styles from './welcome.style'
 import {icons, SIZES} from "../../../constants"
 
+const jobTypes = ["Full-time", "Part-time", "Contractor"]
+
 const Welcome = () => {
   const router = useRouter()
 
@@ -32,7 +34,14 @@ const Welcome = () => {
       </View>
 
       <View style={styles.tabsContainer}>
-        <FlatList  />
+        <FlatList 
+        data={jobTypes}
+        renderItem={({item}) => (
+          <TouchableOpacity>
+          <Text>{item}</Text>
+          </TouchableOpacity>
+        )}
+        />
       </View>
     </View>
   )
