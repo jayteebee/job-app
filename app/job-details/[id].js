@@ -24,6 +24,9 @@ const JobDetails = () => {
 const params = useGlobalSearchParams()
 const router = useRouter()
 
+const {data, isLoading, error, refetch} = useFetch("job-details", {
+    job_id: params.id
+})
 
   return <Text>Job Details</Text>;
 };
