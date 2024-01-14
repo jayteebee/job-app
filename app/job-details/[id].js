@@ -38,6 +38,9 @@ const displayTabContent = () => {
       points={data[0].job_highlights.Qualifications ? data[0].job_highlights.qualifications : ["N/A"]}
       />
     case "About":
+      return <JobAbout
+      info={data[0].job_description ? data[0].job_description : "No data provided" }
+      />
     case "Responsibilities":
     
     default:  
