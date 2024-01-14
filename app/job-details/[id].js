@@ -60,7 +60,7 @@ const displayTabContent = () => {
   const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: params.id,
   });
-
+console.log('data',data)
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
@@ -115,7 +115,7 @@ const displayTabContent = () => {
         </ScrollView>
 
         <JobFooter
-        url={data[0].job_google_link}
+        url={data[0] ? data[0].job_google_link : "https://careers.google.com/jobs/results/" }
         />
       </React.Fragment>
     </SafeAreaView>
