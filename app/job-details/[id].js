@@ -77,7 +77,7 @@ const displayTabContent = () => {
           headerTitle: "",
         }}
       />
-      <>
+      <React.Fragment>
         <ScrollView
           showsVerticalScrollIndicator={false}
           refreshControl={
@@ -109,7 +109,11 @@ const displayTabContent = () => {
             </View>
           )}
         </ScrollView>
-      </>
+
+        <JobFooter
+        url={data[0].job_google_link}
+        />
+      </React.Fragment>
     </SafeAreaView>
   );
 };
