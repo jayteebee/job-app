@@ -23,7 +23,11 @@
     "updates": {
       "url": "https://u.expo.dev/4556a979-df43-468d-b78a-6a6a407e4e55"
     },
-    "android": {},
-    "ios": {}
+    "android": {
+      "package": "com.jethro_theo.jobapp"
+    },
+    "ios": {
+      "bundleIdentifier": "job-app"
+    }
   }
 }
