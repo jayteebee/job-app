@@ -29,8 +29,8 @@ const [activeJobType, setActiveJobType] = useState("Full-time")
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
-            value=""
-            onChange={() => {}}
+            value={searchTerm}
+            onChange={(text) => setSearchTerm(text)}
             placeholder="What are you looking for?"
           />
         </View>
