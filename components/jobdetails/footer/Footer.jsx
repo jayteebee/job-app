@@ -5,10 +5,16 @@ import styles from './footer.style'
 import { icons } from '../../../constants'
 
 
-const Footer = () => {
+const Footer = ({url}) => {
   return (
-    <View>
-      <Text>Footer</Text>
+    <View style={styles.container}>
+      <TouchableOpacity>
+        <Image 
+        source={icons.heartOutline}
+        resizeMode='contain'
+        style={styles.likeBtnImage}
+        />
+      </TouchableOpacity>
     </View>
   )
 }
